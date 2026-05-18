@@ -1,0 +1,504 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <i class="bi bi-compass me-2"></i>Wanderlust
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navMenu"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navMenu">
+          <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1">
+            <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="#destinations">Destinations</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+            <li class="nav-item ms-lg-3">
+              <a class="btn btn-outline-nav" href="#contact">Book Now</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Hero Section -->
+    <section
+      id="home"
+      class="d-flex align-items-center justify-content-center text-center text-white"
+    >
+      <div class="container">
+        <h1 class="display-4 fw-bold animate-fade-up">
+          Explore the World with Wanderlust
+        </h1>
+        <p class="lead mb-4">
+          Discover unforgettable travel experiences and create lasting memories.
+        </p>
+        <div
+          class="d-flex flex-wrap gap-3 justify-content-center animate-fade-up delay-3"
+        >
+          <a href="#destinations" class="btn btn-hero-primary"
+            >Explore Destinations</a
+          >
+          <a
+            href="#"
+            class="btn btn-hero-ghost"
+            data-bs-toggle="modal"
+            data-bs-target="#videoModal"
+          >
+            <i class="bi bi-play-circle me-2"></i>Watch Film
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Destinations Section -->
+    <section id="destinations" class="py-5">
+      <div class="container">
+        <p class="section-subtitle text-center">-Trending-</p>
+        <h2 class="section-title text-center mb-5 animate-fade-up">
+          Top Destinations
+        </h2>
+      </div>
+      <!-- Destination Card 1 -->
+
+      <div
+        id="carouselExampleInterval"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="10000">
+            <div
+              class="carousel-slide"
+              style="
+                background-image: url(&quot;https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1600&q=80&quot;);
+              "
+            >
+              <div class="carousel-caption-custom">
+                <span class="carousel-tag">Switzerland</span>
+                <h3>Swiss Alps Expedition</h3>
+                <p>Towering peaks, crystal lakes & charming alpine villages.</p>
+                <a href="#destinations" class="btn btn-carousel">Explore</a>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <div
+              class="carousel-slide"
+              style="
+                background-image: url(&quot;https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=1600&q=80&quot;);
+              "
+            >
+              <div class="carousel-caption-custom">
+                <span class="carousel-tag">Indonesia</span>
+                <h3>Bali Island Retreat</h3>
+                <p>
+                  Ancient temples, tropical rice terraces & turquoise waves.
+                </p>
+                <a href="#destinations" class="btn btn-carousel">Explore</a>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div
+              class="carousel-slide"
+              style="
+                background-image: url(&quot;https://images.unsplash.com/photo-1539037116277-4db20889f2d4?w=1600&q=80&quot;);
+              "
+            >
+              <div class="carousel-caption-custom">
+                <span class="carousel-tag">Morocco</span>
+                <h3>Sahara Desert Journey</h3>
+                <p>Golden dunes, starlit skies & vibrant medina markets.</p>
+                <a href="#destinations" class="btn btn-carousel">Explore</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleInterval"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleInterval"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- Destination Section /  Card Section -->
+    <section class="destination-section py-5 py-lg-6" id="destination">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-lg-6">
+            <p class="section-eyebrow">— Handpicked For You —</p>
+            <h2 class="section-title">Featured Destinations</h2>
+          </div>
+          <div
+            class="col-lg-6 d-flex align-items-end justify-content-lg-end mt-4 mt-lg-0"
+          >
+            <div class="filter-pills d-flex gap-2 flex-wrap">
+              <button class="filter-pill active">All</button>
+              <button class="filter-pill">Beach</button>
+              <button class="filter-pill">Mountain</button>
+              <button class="filter-pill">City</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="row g-4" id="cardGrid">
+          <!-- dest card 1-->
+          <div class="col-md-6 col-lg-4 card-item" data-category="beach">
+            <div class="dest-card">
+              <div class="dest-card-img-wrap">
+                <img
+                  src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=600&q=80"
+                  alt="Maldives"
+                  class="dest-card-img"
+                />
+                <span class="dest-badge">🏖 Beach</span>
+                <span class="dest-price">From $1,299</span>
+              </div>
+              <div class="dest-card-body">
+                <div
+                  class="d-flex justify-content-between align-items-start mb-2"
+                >
+                  <h5 class="dest-title">Maldives Bliss</h5>
+                  <span class="dest-rating"
+                    ><i class="bi bi-star-fill"></i> 4.9</span
+                  >
+                </div>
+                <p class="dest-desc">
+                  Overwater bungalows, coral reefs & the clearest turquoise
+                  waters on Earth.
+                </p>
+                <div class="dest-meta">
+                  <span><i class="bi bi-clock"></i> 7 nights</span>
+                  <span><i class="bi bi-people"></i> Group & Solo</span>
+                </div>
+                <button
+                  class="btn btn-dest mt-3 w-100"
+                  data-bs-toggle="modal"
+                  data-bs-target="#bookModal"
+                  onclick="setDestination('Maldives Bliss')"
+                >
+                  Book This Trip <i class="bi bi-arrow-right ms-1"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <!--  dest card 2 -->
+          <div class="col-md-6 col-lg-4 card-item" data-category="beach">
+            <div class="dest-card">
+              <div class="dest-card-img-wrap">
+                <img
+                  src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=600&q=80"
+                  alt="Maldives"
+                  class="dest-card-img"
+                />
+                <span class="dest-badge">🏖 Beach</span>
+                <span class="dest-price">From $1,299</span>
+              </div>
+              <div class="dest-card-body">
+                <div
+                  class="d-flex justify-content-between align-items-start mb-2"
+                >
+                  <h5 class="dest-title">Maldives Bliss</h5>
+                  <span class="dest-rating"
+                    ><i class="bi bi-star-fill"></i> 4.9</span
+                  >
+                </div>
+                <p class="dest-desc">
+                  Overwater bungalows, coral reefs & the clearest turquoise
+                  waters on Earth.
+                </p>
+                <div class="dest-meta">
+                  <span><i class="bi bi-clock"></i> 7 nights</span>
+                  <span><i class="bi bi-people"></i> Group & Solo</span>
+                </div>
+                <button
+                  class="btn btn-dest mt-3 w-100"
+                  data-bs-toggle="modal"
+                  data-bs-target="#bookModal"
+                  onclick="setDestination('Maldives Bliss')"
+                >
+                  Book This Trip <i class="bi bi-arrow-right ms-1"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- dest card 3 -->
+          <div class="col-md-6 col-lg-4 card-item" data-category="city">
+            <div class="dest-card">
+              <div class="dest-card-img-wrap">
+                <img
+                  src="https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?w=600&q=80"
+                  alt="Tokyo"
+                  class="dest-card-img"
+                />
+                <span class="dest-badge">🏙 City</span>
+                <span class="dest-price">From $999</span>
+              </div>
+              <div class="dest-card-body">
+                <div
+                  class="d-flex justify-content-between align-items-start mb-2"
+                >
+                  <h5 class="dest-title">Tokyo Exploration</h5>
+                  <span class="dest-rating"
+                    ><i class="bi bi-star-fill"></i> 4.8</span
+                  >
+                </div>
+                <p class="dest-desc">
+                  Iconic landmarks, vibrant neighborhoods & world-class museums.
+                </p>
+                <div class="dest-meta">
+                  <span><i class="bi bi-clock"></i> 5 nights</span>
+                  <span><i class="bi bi-people"></i> Group & Solo</span>
+                </div>
+                <button
+                  class="btn btn-dest mt-3 w-100"
+                  data-bs-toggle="modal"
+                  data-bs-target="#bookModal"
+                  onclick="setDestination('New York Adventure')"
+                >
+                  Book This Trip <i class="bi bi-arrow-right ms-1"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- dest card 4 -->
+          <div class="col-md-6 col-lg-4 card-item" data-category="mountain">
+            <div class="dest-card">
+              <div class="dest-card-img-wrap">
+                <img
+                  src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?w=600&q=80"
+                  alt="Santorini"
+                  class="dest-card-img"
+                />
+
+                <span class="dest-badge">⛰ Mountain</span>
+                <span class="dest-price">From $1,499</span>
+              </div>
+              <div class="dest-card-body">
+                <div
+                  class="d-flex justify-content-between align-items-start mb-2"
+                >
+                  <h5 class="dest-title">Swiss Alps Adventure</h5>
+                  <span class="dest-rating"
+                    ><i class="bi bi-star-fill"></i> 4.9</span
+                  >
+                </div>
+                <p class="dest-desc">
+                  Breathtaking mountain views, pristine lakes & world-class
+                  skiing.
+                </p>
+                <div class="dest-meta">
+                  <span><i class="bi bi-clock"></i> 6 nights</span>
+                  <span><i class="bi bi-people"></i> Group & Solo</span>
+                </div>
+                <button
+                  class="btn btn-dest mt-3 w-100"
+                  data-bs-toggle="modal"
+                  data-bs-target="#bookModal"
+                  onclick="setDestination('Swiss Alps Adventure')"
+                >
+                  Book This Trip <i class="bi bi-arrow-right ms-1"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- dest card 5 -->
+          <div class="col-md-6 col-lg-4 card-item" data-category="beach">
+            <div class="dest-card">
+              <div class="dest-card-img-wrap">
+                <img
+                  src="https://images.unsplash.com/photo-1544735716-392fe2489ffa?w=600&q=80"
+                  alt="Nepal"
+                  class="dest-card-img"
+                />
+                <span class="dest-badge">🏖 Beach</span>
+                <span class="dest-price">From $2,999</span>
+              </div>
+              <div class="dest-card-body">
+                <div
+                  class="d-flex justify-content-between align-items-start mb-2"
+                >
+                  <h5 class="dest-title">Maldives Bliss</h5>
+                  <span class="dest-rating"
+                    ><i class="bi bi-star-fill"></i> 4.9</span
+                  >
+                </div>
+                <p class="dest-desc">
+                  Overwater bungalows, crystal-clear waters & vibrant marine
+                  life.
+                </p>
+                <div class="dest-meta">
+                  <span><i class="bi bi-clock"></i> 7 nights</span>
+                  <span><i class="bi bi-people"></i> Group & Solo</span>
+                </div>
+                <button
+                  class="btn btn-dest mt-3 w-100"
+                  data-bs-toggle="modal"
+                  data-bs-target="#bookModal"
+                  onclick="setDestination('Maldives Bliss')"
+                >
+                  Book This Trip <i class="bi bi-arrow-right ms-1"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- dest card 6 -->
+          <div class="col-md-6 col-lg-4 card-item" data-category="desert">
+            <div class="dest-card">
+              <div class="dest-card-img-wrap">
+                <img
+                  src="https://images.unsplash.com/photo-1499856871958-5b9627545d1a?w=600&q=80"
+                  alt="Paris"
+                  class="dest-card-img"
+                />
+                <span class="dest-badge">🌆 City</span>
+                <span class="dest-price">From $1,499</span>
+              </div>
+              <div class="dest-card-body">
+                <div
+                  class="d-flex justify-content-between align-items-start mb-2"
+                >
+                  <h5 class="dest-title">Sahara Sand Dunes</h5>
+                  <span class="dest-rating"
+                    ><i class="bi bi-star-fill"></i> 4.8</span
+                  >
+                </div>
+                <p class="dest-desc">
+                  Experience the golden dunes, starry nights & traditional
+                  Bedouin culture.
+                </p>
+                <div class="dest-meta">
+                  <span><i class="bi bi-clock"></i> 5 nights</span>
+                  <span><i class="bi bi-people"></i> Group & Solo</span>
+                </div>
+                <button
+                  class="btn btn-dest mt-3 w-100"
+                  data-bs-toggle="modal"
+                  data-bs-target="#bookModal"
+                  onclick="setDestination('Sahara Sand Dunes')"
+                >
+                  Book This Trip <i class="bi bi-arrow-right ms-1"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-section py-5 py-lg-6" id="contact">
+      <div class="container">
+<h2 class="contact-us" >Contact Us</h2>
+      <div class="col-lg-7 mx-auto text-center">
+        <div class="contact-form-card">
+          <form id="contactForm" novalidate>
+            <div class="row g-3">
+              <div class="col-sm-6">
+                <label class="form-label">Full Name</label>
+                <input
+                  type="text"
+                  class="form-control contact-input"
+                  placeholder="Your name"
+                  required
+                />
+                <div class="invalid-feedback">Please enter your name.</div>
+              </div>
+              <div class="col-sm-6">
+                <label class="form-label">Email Address</label>
+                <input
+                  type="email"
+                  class="form-control contact-input"
+                  placeholder="your@email.com"
+                  required
+                />
+                <div class="invalid-feedback">Please enter a valid email.</div>
+              </div>
+              <div class="col-12">
+                <label class="form-label">Dream Destination</label>
+                <select class="form-select contact-input">
+                  <option value="">Select a destination...</option>
+                  <option>Maldives Bliss</option>
+                  <option>Patagonia Trek</option>
+                  <option>Tokyo Nights</option>
+                  <option>Santorini Escape</option>
+                  <option>Himalayan Odyssey</option>
+                  <option>Paris Romance</option>
+                  <option>Other / Custom</option>
+                </select>
+              </div>
+              <div class="col-12">
+                <label class="form-label">Your Message</label>
+                <textarea
+                  class="form-control contact-input"
+                  rows="5"
+                  placeholder="Tell us about your dream trip — dates, budget, preferences..."
+                  required
+                ></textarea>
+                <div class="invalid-feedback">
+                  Please tell us about your trip.
+                </div>
+              </div>
+              <div class="col-12">
+                <button type="submit" class="btn btn-contact-submit w-100">
+                  <span class="btn-text"
+                    >Send My Enquiry <i class="bi bi-send ms-2"></i
+                  ></span>
+                  <span class="btn-success-text d-none"
+                    ><i class="bi bi-check-circle me-2"></i>Message Sent!</span
+                  >
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      </div>
+
+    </section>
+  </body>
+</html>
